@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D60DE9158985D000D26A4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DE8158985D000D26A4E /* UIKit.framework */; };
+		30D60DEB158985D000D26A4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DEA158985D000D26A4E /* Foundation.framework */; };
+		30D60DED158985D000D26A4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DEC158985D000D26A4E /* CoreGraphics.framework */; };
+		30D60DF3158985D000D26A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30D60DF1158985D000D26A4E /* InfoPlist.strings */; };
+		30D60DF5158985D000D26A4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60DF4158985D000D26A4E /* main.m */; };
+		30D60DF9158985D000D26A4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60DF8158985D000D26A4E /* AppDelegate.m */; };
+		30D60DFC158985D000D26A4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60DFB158985D000D26A4E /* ViewController.m */; };
+		30D60DFF158985D000D26A4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30D60DFD158985D000D26A4E /* ViewController.xib */; };
+		30D60E07158985D000D26A4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60E06158985D000D26A4E /* SenTestingKit.framework */; };
+		30D60E08158985D000D26A4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DE8158985D000D26A4E /* UIKit.framework */; };
+		30D60E09158985D000D26A4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DEA158985D000D26A4E /* Foundation.framework */; };
+		30D60E11158985D000D26A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30D60E0F158985D000D26A4E /* InfoPlist.strings */; };
+		30D60E14158985D000D26A4E /* CalculadoraNPRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60E13158985D000D26A4E /* CalculadoraNPRTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30D60E0A158985D000D26A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D60DDB158985CF00D26A4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D60DE3158985D000D26A4E;
+			remoteInfo = CalculadoraNPR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30D60DE4158985D000D26A4E /* CalculadoraNPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculadoraNPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D60DE8158985D000D26A4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30D60DEA158985D000D26A4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30D60DEC158985D000D26A4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30D60DF0158985D000D26A4E /* CalculadoraNPR-Info.plist */ = {isa = PBXFileReference; path = "CalculadoraNPR-Info.plist"; sourceTree = "<group>"; };
+		30D60DF2158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30D60DF4158985D000D26A4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30D60DF6158985D000D26A4E /* CalculadoraNPR-Prefix.pch */ = {isa = PBXFileReference; path = "CalculadoraNPR-Prefix.pch"; sourceTree = "<group>"; };
+		30D60DF7158985D000D26A4E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		30D60DF8158985D000D26A4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30D60DFA158985D000D26A4E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		30D60DFB158985D000D26A4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30D60DFE158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		30D60E05158985D000D26A4E /* CalculadoraNPRTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraNPRTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D60E06158985D000D26A4E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		30D60E0E158985D000D26A4E /* CalculadoraNPRTests-Info.plist */ = {isa = PBXFileReference; path = "CalculadoraNPRTests-Info.plist"; sourceTree = "<group>"; };
+		30D60E10158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30D60E12158985D000D26A4E /* CalculadoraNPRTests.h */ = {isa = PBXFileReference; path = CalculadoraNPRTests.h; sourceTree = "<group>"; };
+		30D60E13158985D000D26A4E /* CalculadoraNPRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculadoraNPRTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D60DE1158985D000D26A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60DE9158985D000D26A4E /* UIKit.framework in Frameworks */,
+				30D60DEB158985D000D26A4E /* Foundation.framework in Frameworks */,
+				30D60DED158985D000D26A4E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D60E01158985D000D26A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60E07158985D000D26A4E /* SenTestingKit.framework in Frameworks */,
+				30D60E08158985D000D26A4E /* UIKit.framework in Frameworks */,
+				30D60E09158985D000D26A4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D60DD9158985CF00D26A4E = {
+			isa = PBXGroup;
+			children = (
+				30D60DEE158985D000D26A4E /* CalculadoraNPR */,
+				30D60E0C158985D000D26A4E /* CalculadoraNPRTests */,
+				30D60DE7158985D000D26A4E /* Frameworks */,
+				30D60DE5158985D000D26A4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D60DE5158985D000D26A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D60DE4158985D000D26A4E /* CalculadoraNPR.app */,
+				30D60E05158985D000D26A4E /* CalculadoraNPRTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D60DE7158985D000D26A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D60DE8158985D000D26A4E /* UIKit.framework */,
+				30D60DEA158985D000D26A4E /* Foundation.framework */,
+				30D60DEC158985D000D26A4E /* CoreGraphics.framework */,
+				30D60E06158985D000D26A4E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30D60DEE158985D000D26A4E /* CalculadoraNPR */ = {
+			isa = PBXGroup;
+			children = (
+				30D60DF7158985D000D26A4E /* AppDelegate.h */,
+				30D60DF8158985D000D26A4E /* AppDelegate.m */,
+				30D60DFA158985D000D26A4E /* ViewController.h */,
+				30D60DFB158985D000D26A4E /* ViewController.m */,
+				30D60DFD158985D000D26A4E /* ViewController.xib */,
+				30D60DEF158985D000D26A4E /* Supporting Files */,
+			);
+			path = CalculadoraNPR;
+			sourceTree = "<group>";
+		};
+		30D60DEF158985D000D26A4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30D60DF0158985D000D26A4E /* CalculadoraNPR-Info.plist */,
+				30D60DF1158985D000D26A4E /* InfoPlist.strings */,
+				30D60DF4158985D000D26A4E /* main.m */,
+				30D60DF6158985D000D26A4E /* CalculadoraNPR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30D60E0C158985D000D26A4E /* CalculadoraNPRTests */ = {
+			isa = PBXGroup;
+			children = (
+				30D60E12158985D000D26A4E /* CalculadoraNPRTests.h */,
+				30D60E13158985D000D26A4E /* CalculadoraNPRTests.m */,
+				30D60E0D158985D000D26A4E /* Supporting Files */,
+			);
+			path = CalculadoraNPRTests;
+			sourceTree = "<group>";
+		};
+		30D60E0D158985D000D26A4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30D60E0E158985D000D26A4E /* CalculadoraNPRTests-Info.plist */,
+				30D60E0F158985D000D26A4E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30D60DE3158985D000D26A4E /* CalculadoraNPR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D60E17158985D000D26A4E /* Build configuration list for PBXNativeTarget "CalculadoraNPR" */;
+			buildPhases = (
+				30D60DE0158985D000D26A4E /* Sources */,
+				30D60DE1158985D000D26A4E /* Frameworks */,
+				30D60DE2158985D000D26A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculadoraNPR;
+			productName = CalculadoraNPR;
+			productReference = 30D60DE4158985D000D26A4E /* CalculadoraNPR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30D60E04158985D000D26A4E /* CalculadoraNPRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D60E1A158985D000D26A4E /* Build configuration list for PBXNativeTarget "CalculadoraNPRTests" */;
+			buildPhases = (
+				30D60E00158985D000D26A4E /* Sources */,
+				30D60E01158985D000D26A4E /* Frameworks */,
+				30D60E02158985D000D26A4E /* Resources */,
+				30D60E03158985D000D26A4E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D60E0B158985D000D26A4E /* PBXTargetDependency */,
+			);
+			name = CalculadoraNPRTests;
+			productName = CalculadoraNPRTests;
+			productReference = 30D60E05158985D000D26A4E /* CalculadoraNPRTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D60DDB158985CF00D26A4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 30D60DDE158985CF00D26A4E /* Build configuration list for PBXProject "CalculadoraNPR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 30D60DD9158985CF00D26A4E;
+			productRefGroup = 30D60DE5158985D000D26A4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D60DE3158985D000D26A4E /* CalculadoraNPR */,
+				30D60E04158985D000D26A4E /* CalculadoraNPRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30D60DE2158985D000D26A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60DF3158985D000D26A4E /* InfoPlist.strings in Resources */,
+				30D60DFF158985D000D26A4E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D60E02158985D000D26A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60E11158985D000D26A4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D60E03158985D000D26A4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D60DE0158985D000D26A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60DF5158985D000D26A4E /* main.m in Sources */,
+				30D60DF9158985D000D26A4E /* AppDelegate.m in Sources */,
+				30D60DFC158985D000D26A4E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D60E00158985D000D26A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D60E14158985D000D26A4E /* CalculadoraNPRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D60E0B158985D000D26A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D60DE3158985D000D26A4E /* CalculadoraNPR */;
+			targetProxy = 30D60E0A158985D000D26A4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30D60DF1158985D000D26A4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D60DF2158985D000D26A4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30D60DFD158985D000D26A4E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D60DFE158985D000D26A4E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		30D60E0F158985D000D26A4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D60E10158985D000D26A4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30D60E15158985D000D26A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30D60E16158985D000D26A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30D60E18158985D000D26A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculadoraNPR/CalculadoraNPR-Prefix.pch";
+				INFOPLIST_FILE = "CalculadoraNPR/CalculadoraNPR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		30D60E19158985D000D26A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculadoraNPR/CalculadoraNPR-Prefix.pch";
+				INFOPLIST_FILE = "CalculadoraNPR/CalculadoraNPR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		30D60E1B158985D000D26A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CalculadoraNPR.app/CalculadoraNPR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculadoraNPR/CalculadoraNPR-Prefix.pch";
+				INFOPLIST_FILE = "CalculadoraNPRTests/CalculadoraNPRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		30D60E1C158985D000D26A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CalculadoraNPR.app/CalculadoraNPR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalculadoraNPR/CalculadoraNPR-Prefix.pch";
+				INFOPLIST_FILE = "CalculadoraNPRTests/CalculadoraNPRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D60DDE158985CF00D26A4E /* Build configuration list for PBXProject "CalculadoraNPR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D60E15158985D000D26A4E /* Debug */,
+				30D60E16158985D000D26A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D60E17158985D000D26A4E /* Build configuration list for PBXNativeTarget "CalculadoraNPR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D60E18158985D000D26A4E /* Debug */,
+				30D60E19158985D000D26A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30D60E1A158985D000D26A4E /* Build configuration list for PBXNativeTarget "CalculadoraNPRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D60E1B158985D000D26A4E /* Debug */,
+				30D60E1C158985D000D26A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30D60DDB158985CF00D26A4E /* Project object */;
+}
