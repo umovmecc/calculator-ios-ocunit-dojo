@@ -20,6 +20,7 @@
 		30D60E09158985D000D26A4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D60DEA158985D000D26A4E /* Foundation.framework */; };
 		30D60E11158985D000D26A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30D60E0F158985D000D26A4E /* InfoPlist.strings */; };
 		30D60E14158985D000D26A4E /* CalculadoraNPRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60E13158985D000D26A4E /* CalculadoraNPRTests.m */; };
+		30D60E1F1589882400D26A4E /* CalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D60E1E1589882400D26A4E /* CalculatorEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +38,23 @@
 		30D60DE8158985D000D26A4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30D60DEA158985D000D26A4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30D60DEC158985D000D26A4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		30D60DF0158985D000D26A4E /* CalculadoraNPR-Info.plist */ = {isa = PBXFileReference; path = "CalculadoraNPR-Info.plist"; sourceTree = "<group>"; };
+		30D60DF0158985D000D26A4E /* CalculadoraNPR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculadoraNPR-Info.plist"; sourceTree = "<group>"; };
 		30D60DF2158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30D60DF4158985D000D26A4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30D60DF6158985D000D26A4E /* CalculadoraNPR-Prefix.pch */ = {isa = PBXFileReference; path = "CalculadoraNPR-Prefix.pch"; sourceTree = "<group>"; };
-		30D60DF7158985D000D26A4E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		30D60DF6158985D000D26A4E /* CalculadoraNPR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalculadoraNPR-Prefix.pch"; sourceTree = "<group>"; };
+		30D60DF7158985D000D26A4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30D60DF8158985D000D26A4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30D60DFA158985D000D26A4E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		30D60DFA158985D000D26A4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		30D60DFB158985D000D26A4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30D60DFE158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		30D60E05158985D000D26A4E /* CalculadoraNPRTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculadoraNPRTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D60E06158985D000D26A4E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		30D60E0E158985D000D26A4E /* CalculadoraNPRTests-Info.plist */ = {isa = PBXFileReference; path = "CalculadoraNPRTests-Info.plist"; sourceTree = "<group>"; };
+		30D60E0E158985D000D26A4E /* CalculadoraNPRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculadoraNPRTests-Info.plist"; sourceTree = "<group>"; };
 		30D60E10158985D000D26A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		30D60E12158985D000D26A4E /* CalculadoraNPRTests.h */ = {isa = PBXFileReference; path = CalculadoraNPRTests.h; sourceTree = "<group>"; };
+		30D60E12158985D000D26A4E /* CalculadoraNPRTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculadoraNPRTests.h; sourceTree = "<group>"; };
 		30D60E13158985D000D26A4E /* CalculadoraNPRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculadoraNPRTests.m; sourceTree = "<group>"; };
+		30D60E1D1589882400D26A4E /* CalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorEngine.h; sourceTree = "<group>"; };
+		30D60E1E1589882400D26A4E /* CalculatorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				30D60DFB158985D000D26A4E /* ViewController.m */,
 				30D60DFD158985D000D26A4E /* ViewController.xib */,
 				30D60DEF158985D000D26A4E /* Supporting Files */,
+				30D60E1D1589882400D26A4E /* CalculatorEngine.h */,
+				30D60E1E1589882400D26A4E /* CalculatorEngine.m */,
 			);
 			path = CalculadoraNPR;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				30D60DF5158985D000D26A4E /* main.m in Sources */,
 				30D60DF9158985D000D26A4E /* AppDelegate.m in Sources */,
 				30D60DFC158985D000D26A4E /* ViewController.m in Sources */,
+				30D60E1F1589882400D26A4E /* CalculatorEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +321,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -331,6 +337,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -340,7 +347,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
