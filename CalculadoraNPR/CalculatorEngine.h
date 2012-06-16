@@ -10,4 +10,8 @@
 
 @interface CalculatorEngine : NSObject
 
+- (void)pushOperand:(double)operand;
+- (double)popOperand;
+- (double)performOperation:(NSString *)operation;
+
 @end

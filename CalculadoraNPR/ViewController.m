@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize btnMinus;
+@synthesize btnPlus;
+@synthesize lblResult;
+@synthesize engine;
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,11 +25,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    engine = [[CalculatorEngine alloc] init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setBtnMinus:nil];
+    [self setBtnPlus:nil];
+    [self setLblResult:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,4 +65,23 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)minusPressed:(UIButton *)sender {
+    double result = [engine performOperation:sender.titleLabel.text];
+    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
+}
+
+- (IBAction)plusPressed:(UIButton *)sender {
+    double result = [engine performOperation:sender.titleLabel.text];
+    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
+}
+
+- (IBAction)enterPressed:(UIButton *)sender {
+    double operand = [lblResult.text doubleValue];
+    [engine pushOperand:operand];
+    lblResult.text = @"";
+}
+
+- (IBAction)numberPressed:(UIButton *)sender {
+    lblResult.text = [NSString stringWithFormat:@"%@%@",lblResult.text, sender.titleLabel.text]; 
+}
 @end

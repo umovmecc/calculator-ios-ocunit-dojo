@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculatorEngine.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UIButton *btnMinus;
+@property (strong, nonatomic) IBOutlet UIButton *btnPlus;
+@property (strong, nonatomic) IBOutlet UILabel *lblResult;
+@property (strong, nonatomic) CalculatorEngine *engine;
 
 @end
