@@ -14,10 +14,26 @@
 @synthesize lblResult;
 @synthesize engine;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+#pragma mark - events
+
+- (IBAction)minusPressed:(UIButton *)sender {
+    double result = [engine performOperation:sender.titleLabel.text];
+    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
+}
+
+- (IBAction)plusPressed:(UIButton *)sender {
+    double result = [engine performOperation:sender.titleLabel.text];
+    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
+}
+
+- (IBAction)enterPressed:(UIButton *)sender {
+    double operand = [lblResult.text doubleValue];
+    [engine pushOperand:operand];
+    lblResult.text = @"";
+}
+
+- (IBAction)numberPressed:(UIButton *)sender {
+    lblResult.text = [NSString stringWithFormat:@"%@%@",lblResult.text, sender.titleLabel.text]; 
 }
 
 #pragma mark - View lifecycle
@@ -65,23 +81,5 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)minusPressed:(UIButton *)sender {
-    double result = [engine performOperation:sender.titleLabel.text];
-    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
-}
 
-- (IBAction)plusPressed:(UIButton *)sender {
-    double result = [engine performOperation:sender.titleLabel.text];
-    lblResult.text = [NSString stringWithFormat:@"%@", [NSNumber numberWithDouble: result]]; 
-}
-
-- (IBAction)enterPressed:(UIButton *)sender {
-    double operand = [lblResult.text doubleValue];
-    [engine pushOperand:operand];
-    lblResult.text = @"";
-}
-
-- (IBAction)numberPressed:(UIButton *)sender {
-    lblResult.text = [NSString stringWithFormat:@"%@%@",lblResult.text, sender.titleLabel.text]; 
-}
 @end
